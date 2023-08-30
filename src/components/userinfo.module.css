@@ -1,0 +1,33 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button{
+  background-color: var(--snow);
+  color: var(--pallatinate-blue);
+
+  border: none;
+  border-radius: 10px;
+
+  margin-left: auto;
+  padding: .3em 1em;
+  font-weight: bold;
+  width: fit-content;
+
+  cursor: pointer;
+  transition: .7s;
+}
+
+.button:hover{
+  transition: .3s;
+  background-color: var(--carrot-orange);
+  color: var(--snow);
+}
+
+@media (max-width: 768px){
+  .container{
+    margin: 1em;
+  }
+}

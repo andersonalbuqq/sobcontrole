@@ -1,0 +1,19 @@
+.button{
+  padding: 5px 15px;
+  margin-top: 15px;
+  background-color: var(--carrot-orange);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: var(--space-cadet);
+  font-weight: 600;
+}
+
+.button:hover{
+  color: var(--snow);
+  transition: .2s;
+}
+
+.button:active{
+  background-color: #ce8537;
+}

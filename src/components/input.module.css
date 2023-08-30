@@ -1,0 +1,21 @@
+.container{
+  width: 100%;
+  padding: 1em 0 0 0;
+  font-size: .9em;
+}
+
+.label{
+  display: block;
+  padding-bottom: .5em;
+}
+
+.input{
+  border: none;
+  border-radius: 8px;
+  padding: .5em 1em;
+  width: 100%;
+}
+
+.input:focus{
+  outline: none;
+}

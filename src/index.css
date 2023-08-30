@@ -1,0 +1,16 @@
+:root {
+  --space-cadet: #192340;
+  --pallatinate-blue: #4d3efc;
+  --snow: #fffafa;
+  --turquoise: #05f2db;
+  --carrot-orange: #f19a3e;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

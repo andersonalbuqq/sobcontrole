@@ -1,0 +1,111 @@
+.container {
+  height: 100vh;
+
+  padding: 1em;
+  margin: auto;
+
+  display: grid;
+  grid-template-rows: 3.7em 1fr 4em;
+  gap: 20px;
+
+  color: var(--snow);
+}
+
+.logo {
+  height: 3.7em;
+  margin: 0 auto;
+}
+
+.menu {
+  display: none;
+}
+
+.list {
+  margin-right: 1em;
+  fill: var(--snow);
+}
+
+.options {
+  list-style: none;
+}
+
+.open {
+  /* when adding items to menu change and mediaquery */
+  height: 11em;
+  transform: translateX(0);
+  opacity: 100;
+  transition: 1s;
+}
+
+.openUser {
+  height: 3em;
+  transform: translateX(0);
+  opacity: 100;
+  transition: 1s;
+}
+
+.hideMenu {
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.options > li {
+  margin-top: .3em;
+  padding: 0.5em 0;
+  text-align: center;
+  border-bottom: 1px solid var(--snow);
+}
+
+.options > li > a {
+  width: 100%;
+  padding: 0.5em 0.2em;
+  text-decoration: none;
+  color: var(--snow);
+}
+
+.options > li > a:visited {
+  color: var(--snow);
+}
+
+.options > li:hover {
+  background: radial-gradient(
+    circle,
+    hsla(245, 97%, 62%, 1) -15%,
+    hsla(225, 44%, 17%, 1) 120%
+  );
+  border-radius: 0.5em;
+  border: none;
+  font-size: 1.05em;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu > button{
+    background-color: var(--space-cadet);
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (min-width:900px){
+  .hideMenu {
+    height: 10em;
+    transform: translateX(0);
+    opacity: 100;
+  }
+}

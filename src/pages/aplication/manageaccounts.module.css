@@ -1,0 +1,73 @@
+.container {
+  margin: 2.5em auto;
+  padding: 1em 1.5em 1.5em 1.5em;
+  max-width: 700px;
+
+  color: white;
+
+  background-color: var(--space-cadet);
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message {
+  margin: 3em auto;
+}
+
+.form {
+  width: 100%;
+}
+
+.showEdit,
+.hideEdit {
+  background-color: var(--pallatinate-blue);
+  position: absolute;
+  top: calc(50% - 68px);
+  right: calc(50% -107px);
+
+  border-radius: 15px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.showEdit {
+  opacity: 1;
+  z-index: 100;
+  transition: 1s;
+}
+
+.hideEdit {
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  transition: 0.8s;
+}
+
+.hideSmooth {
+  opacity: 50%;
+  pointer-events: none;
+  transition: 1s;
+}
+
+.showSmooth {
+  opacity: 100%;
+  transition: 1s;
+}
+
+.closeButton {
+  background-color: transparent;
+  border: none;
+  align-self: flex-end;
+  margin-bottom: -25px;
+  z-index: 101;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.container{
+  width: 100%;
+  margin-top: 1em;
+  padding: 1em;
+
+  background-color: var(--snow);
+  border-radius: 15px;
+}
+
+.notice{
+  text-align: center;
+  font-weight: 500;
+  color: var(--space-cadet);
+}

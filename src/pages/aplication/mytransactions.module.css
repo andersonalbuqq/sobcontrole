@@ -1,0 +1,98 @@
+.container {
+  margin: 2.5em auto;
+  padding: 1em 1.5em 1.5em 1.5em;
+  max-width: 700px;
+
+  color: white;
+
+  background-color: var(--space-cadet);
+  border-radius: 1.5em;
+}
+
+.table {
+  margin: 2em auto;
+  border-collapse: collapse;
+  min-width: 100%;
+}
+
+.topright {
+  border-radius: 0 0.5em 0 0;
+}
+
+.topleft {
+  border-radius: 0.5em 0 0 0;
+}
+
+.table th {
+  background-color: var(--pallatinate-blue);
+  padding: 5px 8px;
+
+  font-size: 1em;
+  font-weight: 400;
+
+  position: sticky;
+  top: 0;
+}
+
+.table > thead > tr > th > input {
+  background-color: transparent;
+  border: none;
+  color: var(--snow);
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.table td {
+  text-align: center;
+  border: 1px solid var(--pallatinate-blue);
+  padding: 5px;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.entry {
+  fill: #32cd32;
+}
+
+.exit {
+  fill: red;
+}
+
+.value {
+  text-align: end !important;
+}
+
+.options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.options > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.delete {
+  fill: gray;
+}
+
+.edit {
+  fill: #ffcc00;
+}
+
+.noResult {
+  margin: 3em 0 2em 0;
+  text-align: center;
+  fill: var(--snow);
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 1em 1em 1.5em 1em;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,50 @@
+.container {
+  background-color: var(--space-cadet);
+  color: var(--snow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 2.5em auto;
+  padding: 1.5em;
+  border-radius: 1.5em;
+}
+
+.table {
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid var(--pallatinate-blue);
+}
+
+.table caption{
+  text-align: start;
+  padding: .5em 0;
+  text-decoration: wavy;
+}
+
+.moneyCell {  
+  text-align: end;
+}
+
+.piechart{
+  margin-top: 2em;
+}
+
+.add{
+  text-align: center;
+  color: var(--snow);
+  text-decoration: none;
+}
+
+.select{
+  margin-top: 2em;
+  max-width: 15em;
+}
+
+@media(min-width: 500px) {
+  .table{
+    min-width: 400px;
+    margin: auto;
+  }
+}
