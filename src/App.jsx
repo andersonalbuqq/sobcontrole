@@ -10,6 +10,9 @@ import AddTransaction from "./pages/aplication/addtransacion";
 import EditTransaction from "./pages/aplication/edittransaction";
 import MyTransactions from "./pages/aplication/mytransactions";
 import ManageAccounts from "./pages/aplication/manageaccounts";
+import Profile from "./pages/aplication/profile";
+import About from "./pages/aplication/about";
+import NotFound from "./pages/aplication/notfound";
 
 function App() {
   return (
@@ -55,6 +58,30 @@ function App() {
             element={
               <Main>
                 <ManageAccounts />
+              </Main>
+            }
+          ></Route>
+          <Route
+            path="/profile"
+            element={
+              <Main>
+                <Profile />
+              </Main>
+            }
+          ></Route>
+          <Route
+            path="/about"
+            element={
+              <Main>
+                <About />
+              </Main>
+            }
+          ></Route>
+          <Route
+            path="/*"
+            element={
+              <Main>
+                <NotFound />
               </Main>
             }
           ></Route>

@@ -4,6 +4,11 @@
   justify-content: space-between;
 }
 
+.name{
+  color: var(--snow);
+  text-decoration: none;
+}
+ 
 .button{
   background-color: var(--snow);
   color: var(--pallatinate-blue);

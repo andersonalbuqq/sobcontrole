@@ -31,7 +31,7 @@
 
 .open {
   /* when adding items to menu change and mediaquery */
-  height: 11em;
+  height: 13em;
   transform: translateX(0);
   opacity: 100;
   transition: 1s;
@@ -104,7 +104,7 @@
 
 @media (min-width:900px){
   .hideMenu {
-    height: 10em;
+    height: 13em;
     transform: translateX(0);
     opacity: 100;
   }

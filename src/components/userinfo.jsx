@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {toast} from "react-toastify"
 
 import styles from "./userinfo.module.css"
@@ -16,7 +16,7 @@ function Userinfo(props) {
 
   return (
     <div className={styles.container}>
-      <h4>{props.user.name}</h4>
+      <Link className={styles.name} to={'/profile'}>{props.user.name}</Link>
       <input className={styles.button} type="button" onClick={Logout} value={"Sair"}/>
     </div>
   );

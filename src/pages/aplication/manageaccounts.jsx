@@ -40,7 +40,7 @@ function ManageAccounts(props) {
       });
   }, [navigate, props.token, props.user, refreshItems]);
 
-  function getData() {
+  function getData() {  
     const editAccount = (id) => {
       api
         .get(`account/${id}`, {

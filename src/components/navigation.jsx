@@ -47,6 +47,9 @@ function Navigation(props) {
           <li>
             <Link to={"/myaccounts"}>Gerenciar Contas</Link>
           </li>
+          <li>
+            <Link to={"/about"}>Sobre</Link>
+          </li>
         </ul>
       </div>
       <div className={`${isOpen ? styles.hideMenu : styles.openUser}`}>
