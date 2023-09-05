@@ -161,6 +161,7 @@ function Summary(props) {
               setOutput={setSelectedAccount}
             />
           </div>
+
           {getDataToLineGraphic(selectedAccount.id_account) ? (
             <Linechart
               name={getAccountName(selectedAccount.id_account)}

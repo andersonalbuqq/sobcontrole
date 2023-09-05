@@ -22,10 +22,10 @@ function Select(props) {
     // eslint-disable-next-line
   }, [selected]);
 
-  function getAccounts() {
-    return props.options.map((option) => {
+  function getOptions() {
+    return props.options.map((option, i) => {
       return (
-        <option className={styles.option} value={option.id} key={option.id}>
+        <option className={styles.option} value={option.id} key={i}>
           {option.name}
         </option>
       );
@@ -41,7 +41,7 @@ function Select(props) {
         id={props.name}
         onChange={onOptionChange}
       >
-        {getAccounts()}
+        {getOptions()}
       </select>
     </div>
   );

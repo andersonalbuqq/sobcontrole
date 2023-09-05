@@ -10,21 +10,38 @@ function About(props) {
       <Title text="Sobre o Projeto" />
       <div className={styles.container}>
         <h3 className={styles.title}>Objetivo</h3>
-        <p>
+        <p className={styles.paragraph}>
           &nbsp;&nbsp;&nbsp;&nbsp;Este projeto tem como principal objetivo a
           pratica dos conhecimentos adquiridos durante a graduação e também
           cursos a parte feitos por mim de React.js e Node.js.
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;Nele foram empregadas tecnologias como: <br />
+          <ul className={styles.list}>
+            <li>HTML 5</li>
+            <li>CSS</li>
+            <li>React.js</li>
+            <li>Toastify</li>
+            <li>Java Script</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Bcrypt</li>
+            <li>Axios</li>
+            <li>Json Web Token</li>
+            <li>Sequelize</li>
+            <li>PostgreSQL</li>
+          </ul>
+          Entre outras...
         </p>
         <br />
         <h3 className={styles.title}>Conceito</h3>
-        <p>
+        <p className={styles.paragraph}>
           &nbsp;&nbsp;&nbsp;&nbsp;Quanto ao projeto em si, trata-se de um
           software para o gerenciamento das finanças pessoais, de forma que seja
           possível ter um melhor acompanhamento da distribuição dos gastos.
         </p>
         <br />
         <h3 className={styles.title}>Sobre mim</h3>
-        <p>
+        <p className={styles.paragraph}>
           &nbsp;&nbsp;&nbsp;&nbsp;Me chamo Anderson, atualmente sou estudante do
           Curso de Análise e Desenvolvimento de sistemas. <br />
           &nbsp;&nbsp;&nbsp;&nbsp;Minhas redes:{" "}
@@ -69,6 +86,7 @@ function About(props) {
             </svg>
           </a>
         </p>
+        <p className={styles.paragraph}>&nbsp;&nbsp;&nbsp;&nbsp;Email: andersonmendes05@gmail.com</p>
       </div>
     </>
   );
