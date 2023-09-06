@@ -168,7 +168,7 @@ function Summary(props) {
               data={getDataToLineGraphic(selectedAccount.id_account)}
             />
           ) : (
-            false
+            <div className={styles.notice}>Sem Movimentações</div>
           )}
         </div>
       ) : (
